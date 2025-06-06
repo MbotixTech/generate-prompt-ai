@@ -155,7 +155,7 @@ VITE_APP_NAME=MBOTIX Prompt Generator
 
 ## 📄 License
 
-This project is licensed under the MIT License © 2025 [Mbotix](https://github.com/MbotixTech)
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
