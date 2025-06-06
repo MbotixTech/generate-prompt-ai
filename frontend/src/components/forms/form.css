@@ -1,0 +1,32 @@
+/* Custom styles for select elements */
+.custom-select {
+  -webkit-appearance: menulist !important;
+  -moz-appearance: menulist !important;
+  appearance: menulist !important;
+  cursor: pointer;
+}
+
+/* Ensure options are visible with appropriate colors in all browsers */
+.custom-select option {
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 5px;
+}
+
+/* Firefox specific styles */
+@-moz-document url-prefix() {
+  .custom-select {
+    background-image: none;
+    padding-right: 1rem;
+  }
+}
+
+/* Safari specific styles */
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    .custom-select {
+      -webkit-appearance: menulist !important;
+      padding-right: 2rem;
+    }
+  }
+}
